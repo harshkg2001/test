@@ -1,0 +1,79 @@
+.card{
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+  margin-bottom: 50px;
+
+  .image{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    &:hover{
+      .secondImg{
+        transform: translateX(-100%);
+        
+      }
+    }
+
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+    }
+
+    .mainImg{
+      position:absolute;
+      top:0;
+      right:0;
+    }
+
+    .secondImg{
+      position:absolute;
+      top:0;
+      right:0;
+      transition: all 0.5s ease;
+    }
+
+    span{
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      background-color: white;
+      color: teal;
+      padding: 3px 5px;
+      z-index: 3;
+      font-weight: 500;
+      font-size: 12px;
+      border-radius: 10px;
+      align-items: center;
+    }
+  }
+
+  h2{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  .prices{
+    display: flex;
+    gap: 20px;
+
+    h3{
+      font-size: 15px;
+      font-weight: 500;
+
+      &:first-child{
+        color: gray;
+        text-decoration: line-through;
+      }
+    }
+  }
+}

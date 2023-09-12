@@ -1,0 +1,28 @@
+.featuredProducts {
+  margin: 100px 200px;
+
+  .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    h1 {
+      flex: 2;
+      text-transform: capitalize;
+      font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    p{
+      flex:3;
+      color:gray;
+      font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    }
+  }
+
+  .bottom{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+}

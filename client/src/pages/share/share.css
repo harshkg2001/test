@@ -1,0 +1,64 @@
+/* share.css */
+.share-popup {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 5px 10px;
+    /* border: 1px solid #007bff; */
+    border-radius: 10px;
+  }
+  
+  .share-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .share-button:hover {
+    background-color: #007bff;
+  }
+  
+  /* Style individual buttons and icons */
+  .facebook-button {
+    background-color: #1877f2;
+  }
+  
+  .twitter-button {
+    background-color: #1da1f2;
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+  }
+  
+  .telegram-button {
+    background-color: #0088cc;
+  }
+  
+  .pinterest-button {
+    background-color: #bd081c;
+  }
+  
+  /* Style icons */
+  .share-icons {
+    text-align: center; /* Center the images */
+  }
+  
+  .share-icon {
+    margin: 0 7px; /* Add horizontal margin to create space between images */
+    font-size: 20px;
+    vertical-align: middle;
+  }
+  

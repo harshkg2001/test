@@ -1,0 +1,46 @@
+React.StrictMode :
+apply certain constraint in the code. for example : specific key value for each row of a table.
+
+Provider store={store} :
+
+
+PersistGate loading={"loading"} persistor={persistor} :
+
+(From App.js)
+createBrowserRouter :
+provided by react-router-dom Library. 
+
+The Layout component is defined as a functional component. It represents the main structure of the application.
+This functional component contains a placeholder element <Outlet/> which is switched with the different children of the layout depending on the path that is passed.
+
+<RouterProvider router={router}/> :
+connects all the route to the application. router is created with the help of createBrowserRouter.
+
+(Home.jsx)
+useNavigate() :
+useNavigate is a property provided by the react-router-dom. Can be used to route to different pages in the application.
+const navigate = useNavigate();
+navigate('/login') {this is used to navigate to the login page from the current page}.
+
+useAuth() :
+useAuth() -> AuthContext (import { createContext } from 'React') -> AuthProvider (custom provider)
+createContext is a property of react that helps us create global states for the web application. These contexts can be used anywhere across the application. 
+Auth provider in the program is mainly used to check if the user is logged in or not. But it passes many information.
+
+(products.jsx)
+It mainly uses useState and a custom hook named as useFetch().
+useFetch() :
+it is a function in which we pass a url as a parameter and get { data, loading, error }. 
+In the function, we use makeRequest (a custom function) to fetch data from the database. The function is called inside the the useEffect hook with the dependency being the url.
+
+makeRequest.js :
+it uses axios to make asynchronous HTTP requests from the web browser. Axios provides a clean and easy-to-use API for performing tasks like fetching data from APIs, submitting form data, and interacting with RESTful services.
+Here we make a function using axios.create() to create a customized instance of Axios.
+
+useParams() :
+
+
+(share.jsx)
+uses customer hooks like useToken and use Transaction
+
+
